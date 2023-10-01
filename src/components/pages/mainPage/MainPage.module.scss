@@ -1,0 +1,58 @@
+@import '/src/styles/settings.scss';
+
+.centeredContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.centeredText {
+  margin-top: 0;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 40vh;
+}
+
+.aboutMe{
+    font-family: $font-second;
+    h5{
+        margin-bottom: 10px;
+        font-weight: 800;
+    }
+
+    span{
+        color:red;
+        font-weight: 700;
+    }
+}
+
+.box {
+  width: 40%;
+  padding: 20px;
+}
+
+.textBox {
+  width: 40%;
+  padding: 20px;
+  margin-right: 15px;
+}
+
+.links {
+  text-transform: uppercase;
+  font-size: 65px;
+  text-decoration: none;
+  color: white;
+  font-family: $font-text;
+  letter-spacing: 5px;
+}
+
+.links:hover {
+  color: red !important;
+  transform: scale(2);
+  transition: 0.3s;
+}
