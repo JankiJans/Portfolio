@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'reactstrap';
 import styles from './Header.module.scss';
 
@@ -8,14 +7,14 @@ const Header = () => {
     <Navbar expand="md" className={styles.transparentNavbar}>
       <Nav navbar className={styles.centerNav}>
         <NavItem>
-          <NavLink to="/subpage1" className={styles.navItemText}>
+          <a href="https://github.com/JankiJans" className={styles.navItemText}>
           <i className={`fa fa-github-square  ${styles.githubIcon}`}></i>
-          </NavLink>
+          </a>
         </NavItem>
         <NavItem>
-          <NavLink to="/subpage2" className={styles.navItemText}>
+          <a href="https://www.linkedin.com/in/jan-k%C4%99dzierski-7a5787293/" className={styles.navItemText}>
           <i className={`fa fa-linkedin-square ${styles.linkedinIcon}`}></i>
-          </NavLink>
+          </a>
         </NavItem>
       </Nav>
     </Navbar>

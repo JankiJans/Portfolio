@@ -1,0 +1,35 @@
+.projectsContainer {
+  height: 100vh;
+  padding-top: 140px;
+}
+
+.carouselItem {
+  // Style dla elementu karuzeli
+}
+
+.imageContainer {
+  position: relative;
+
+  &:hover .carouselCaption {
+    opacity: 1;
+  }
+}
+
+.carouselImage {
+  width: 100%;
+  height: 650px; 
+  object-fit: cover;
+  object-position: top;
+}
+
+.carouselCaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  color: white;
+  width: 100%;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  padding: 15px;
+}
