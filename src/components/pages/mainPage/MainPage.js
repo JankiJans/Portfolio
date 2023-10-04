@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import styles from './MainPage.module.scss';
 import { Link } from 'react-router-dom';
 
-const MainPage = ({ scrollToProjects }) => {
+const MainPage = ({ scrollToProjects, scrollToContact }) => {
 
 
   return (
@@ -16,18 +16,18 @@ const MainPage = ({ scrollToProjects }) => {
           </div>
           <div className={styles.box}>
             <div>
-              <Link to="/" className={styles.links}>
-                KONTAKT
+              <Link to="/" className={styles.links} onClick={scrollToContact}>
+                CONTACT
+              </Link>
+            </div>
+            <div>
+              <Link to="/" className={styles.links} onClick={scrollToProjects}>
+                PROJECTS
               </Link>
             </div>
             <div>
               <Link to="/" className={styles.links}>
-                PROJEKTY
-              </Link>
-            </div>
-            <div>
-              <Link to="/" className={styles.links}>
-                O MNIE
+                SKILLS
               </Link>
             </div>
           </div>

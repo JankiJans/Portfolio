@@ -16,7 +16,7 @@ const Projects = () => {
 
   const handleClose = () => {
     setShowModal(false);
-    setZoom(1);  // Reset zoom when closing modal
+    setZoom(1);
   };
 
   const handleShow = (image) => {
@@ -24,48 +24,64 @@ const Projects = () => {
     setShowModal(true);
   };
 
-  // Toggle zoom on image click
   const toggleZoom = () => {
-    setZoom(prevZoom => (prevZoom === 1 ? 2 : 1));  // Toggle between 1x and 2x zoom
+    setZoom((prevZoom) => (prevZoom === 1 ? 2 : 1));
   };
 
   return (
     <div id="projects" className={styles.projectsContainer}>
       <Container>
-        <Carousel>
+        <Carousel interval={null}>
           <Carousel.Item className={styles.carouselItem}>
-            <div
-              className={styles.imageContainer}
-              onClick={() => handleShow(image1)}
-            >
+            <div className={styles.imageContainer}>
               <img src={image1} className={styles.carouselImage} />
+              <div className={styles.clickableArea} onClick={() => handleShow(image1)}></div>
               <div className={styles.carouselCaption}>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div className={styles.intro}>
+                  <h3>
+                    <b>Concert App</b>
+                  </h3>
+                  <h6 className={`${styles.commonTag} ${styles.React}`}>React</h6>
+                  <h6 className={`${styles.commonTag} ${styles.mongoDb}`}>mongoDB</h6>
+                  <h6 className={`${styles.commonTag} ${styles.prisma}`}>WebSocket</h6>
+                </div>
+                <p>Strona z festiwalami muzycznymi, pozwalająca zarezerować bilet w czasie rzeczywistym. Umożliwa również podgląd na miejsca już zajęte</p>
               </div>
             </div>
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
-            <div
-              className={styles.imageContainer}
-              onClick={() => handleShow(image2)}
-            >
+          <div className={styles.imageContainer}>
               <img src={image2} className={styles.carouselImage} />
+              <div className={styles.clickableArea} onClick={() => handleShow(image2)}></div>
               <div className={styles.carouselCaption}>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div className={styles.intro}>
+                  <h3>
+                    <b>CoffeShop</b>
+                  </h3>
+                  <h6 className={`${styles.commonTag} ${styles.Css}`}>CSS</h6>
+                  <h6 className={`${styles.commonTag} ${styles.js}`}>JavaScript</h6>
+                  <h6 className={`${styles.commonTag} ${styles.MySQL}`}>Handlebars</h6>
+                  <h6 className={`${styles.commonTag} ${styles.bs}`}>Bootstrap</h6>
+                </div>
+                <p>Przykładowy projekt kawiarni, gotowy do modyfikacji pod komercyjny sklep</p>
               </div>
             </div>
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
-            <div
-              className={styles.imageContainer}
-              onClick={() => handleShow(image3)}
-            >
+          <div className={styles.imageContainer}>
               <img src={image3} className={styles.carouselImage} />
+              <div className={styles.clickableArea} onClick={() => handleShow(image3)}></div>
               <div className={styles.carouselCaption}>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div className={styles.intro}>
+                  <h3>
+                    <b>GameBlissProject</b>
+                  </h3>
+                  <h6 className={`${styles.commonTag} ${styles.nestJs}`}>nestJS</h6>
+                  <h6 className={`${styles.commonTag} ${styles.React}`}>React</h6>
+                  <h6 className={`${styles.commonTag} ${styles.MySQL}`}>MySQL</h6>
+                  <h6 className={`${styles.commonTag} ${styles.prisma}`}>Prisma</h6>
+                </div>
+                <p>Strona z grami komputerowymi. Jest to mój pierwszy większy projekt, który pobiera wszystkie informacje z bazy danych. Każdy użytknowik może również założyć konto, logować się oraz zamówić dany produkt. Więcej informacji na githubie.</p>
               </div>
             </div>
           </Carousel.Item>
@@ -81,12 +97,11 @@ const Projects = () => {
                 cursor: 'zoom-in',
                 width: '100%',
                 transform: `scale(${zoom})`,
-                transition: 'transform 0.25s ease'
+                transition: 'transform 0.25s ease',
               }}
             />
           </Modal.Body>
         </Modal>
-
       </Container>
     </div>
   );

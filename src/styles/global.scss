@@ -16,5 +16,10 @@ body {
   flex-direction: column;
 }
 
+.carousel-control-next, .carousel-control-prev {
+  margin-top: 220px;
+  margin-bottom: 220px;
+}
+
 @import './typography.scss';
 @import './settings.scss';

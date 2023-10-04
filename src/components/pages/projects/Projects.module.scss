@@ -3,8 +3,19 @@
   padding-top: 140px;
 }
 
-.carouselItem {
-  // Style dla elementu karuzeli
+// .carouselItem {
+//   // Style dla elementu karuzeli
+// }
+
+.clickableArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .imageContainer {
@@ -26,10 +37,56 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.8); 
   color: white;
   width: 100%;
   opacity: 0; 
   transition: opacity 0.3s ease; 
   padding: 15px;
+  p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
+
+.commonTag {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+
+.nestJs {
+  background-color: red;
+}
+
+.React {
+  background-color: #3081EC;
+}
+
+.MySQL {
+  background-color: #f29111;
+}
+
+.prisma {
+  background-color: #2E4374;
+}
+
+.mongoDb {
+  background-color: #54B435;
+}
+
+.Css {
+  background-color: rgb(255, 107, 132);
+}
+
+.js {
+  background-color: rgb(182, 173, 47);
+}
+
+.bs {
+  background-color: rgb(114, 15, 106);
+}
+
