@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import styles from './MainPage.module.scss';
 import { Link } from 'react-router-dom';
 
-const MainPage = ({ scrollToProjects, scrollToContact }) => {
+const MainPage = ({ scrollToProjects, scrollToContact, scrollToSkillPage }) => {
 
 
   return (
@@ -26,7 +26,7 @@ const MainPage = ({ scrollToProjects, scrollToContact }) => {
               </Link>
             </div>
             <div>
-              <Link to="/" className={styles.links}>
+              <Link to="/" className={styles.links} onClick={scrollToSkillPage}>
                 SKILLS
               </Link>
             </div>

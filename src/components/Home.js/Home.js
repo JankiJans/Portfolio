@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <MainPage scrollToProjects={scrollToProjects} scrollToContact={scrollToContact} />
+      <MainPage scrollToProjects={scrollToProjects} scrollToContact={scrollToContact} scrollToSkillPage={scrollToSkillPage}/>
       <div ref={projectsRef}>
         <Projects />
       </div>
