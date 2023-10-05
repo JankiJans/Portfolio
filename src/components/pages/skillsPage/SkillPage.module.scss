@@ -10,9 +10,14 @@
   
   .fullWidthBox {
     width: 100%;
-    border: 1px solid white;
+    // border: 1px solid white;
     text-align: center;
-    margin-bottom: 25px;;
+    margin-bottom: 25px;
+  }
+
+  .boxTitle {
+    font-family: $font-second;
+    margin-bottom: 40px;
   }
 
   .firstSet {
@@ -29,19 +34,26 @@
   
   .frontEndBox, .backEndBox {
     width: 49.5%;
-    border: 1px solid white;
-    // text-align: center;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+
     p {
         text-align: center;
         padding: 40px;
         font-size: 30px;
         font-family: $font-second;
     }
-  }
+
+    &:hover {
+        box-shadow: 0px 0px 15px rgba(255, 0, 0, 3); 
+    }
+}
+
+
 
   .backendLogos img{
     width: 100px;
-    margin: 15px;
-    
+    margin: 25px;
   }
+  
   

@@ -23,10 +23,11 @@ import react from '../../../images/react.png'
 import sass from '../../../images/sass.png'
 
 const SkillPage = () => {
+
   return (
     <div className={styles.container}>
       <div className={styles.fullWidthBox}>
-        <p>Git, Postman, etc.</p>
+        <h5 className={styles.boxTitle}>During an intensive course, I learned many useful extensions that facilitate the process of creating and developing websites.</h5>
       </div>
       <div className={styles.halfWidthContainer}>
         <div className={styles.frontEndBox}>
