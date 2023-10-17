@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-direction: row;
   height: 5vh;
 }
 
@@ -100,3 +101,33 @@
     transform: translateY(-10px);
   }
 }
+
+// W pliku MainPage.module.scss
+
+// ... Twoje istniejące style ...
+
+// Dostosowanie dla ekranów o szerokości do 768px (typowo dla tabletów i mniejszych urządzeń)
+@media (max-width: 768px) {
+  .centeredContent {
+  }
+
+  .boxContainer {
+      // Na przykład: możesz chcieć zastosować kierunek kolumny, jeśli elementy są ułożone w rzędzie
+      
+  }
+
+  .textBox {
+      width: 100%;
+  }
+
+  .box {
+      // Dostosuj wg potrzeb, na przykład kierunek kolumny, jeśli chcesz, aby linki były jeden pod drugim
+      flex-direction: column;
+  }
+
+  .links {
+      // Możesz zwiększyć rozmiar czcionki dla lepszej widoczności na małych ekranach
+      
+  }
+}
+
