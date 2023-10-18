@@ -90,32 +90,35 @@
   }
 }
 
-// W pliku MainPage.module.scss
+@media (max-width: 766px) {
 
-// ... Twoje istniejące style ...
-
-// Dostosowanie dla ekranów o szerokości do 768px (typowo dla tabletów i mniejszych urządzeń)
-@media (max-width: 768px) {
-  .centeredContent {
-  }
 
   .boxContainer {
-      // Na przykład: możesz chcieć zastosować kierunek kolumny, jeśli elementy są ułożone w rzędzie
+    flex-direction: column;
       
   }
 
   .textBox {
-      width: 100%;
+    width: 100%;
+    order: 2;
   }
 
   .box {
-      // Dostosuj wg potrzeb, na przykład kierunek kolumny, jeśli chcesz, aby linki były jeden pod drugim
-      flex-direction: column;
+    width: 100%;
+    order: 1;
+    display: flex;
+    padding: 0;
+    margin-bottom: 50px;
   }
 
   .links {
-      // Możesz zwiększyć rozmiar czcionki dla lepszej widoczności na małych ekranach
-      
+    font-size: 45px;
+    padding-right: 20px;
+  }
+
+  .centeredContent {
+    display: block;
+    margin-top: 350px;
   }
 }
 
