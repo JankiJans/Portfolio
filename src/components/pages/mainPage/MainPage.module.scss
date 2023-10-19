@@ -119,6 +119,19 @@
   .centeredContent {
     display: block;
     margin-top: 350px;
+      height: 40vh;
   }
+}
+
+
+@media (max-width: 515px) {
+.box{
+  flex-direction: column;
+}
+
+.centeredContent {
+  height: 40vh;
+}
+
 }
 

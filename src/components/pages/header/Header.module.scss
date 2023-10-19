@@ -1,32 +1,32 @@
 .transparentNavbar {
-    background-color: transparent !important;
-  }
-  
-  .centerNav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .navItemText {
-    color: white !important;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 50px;
-  }
-  
-  .githubIcon,
-  .linkedinIcon {
-    transition: 0.3s;
-  }
-  
-  .navItemText:hover .githubIcon {
-    color: #0077b5 !important;
-    transform: scale(1.5);
-  }
-  
-  .navItemText:hover .linkedinIcon {
-    color: #0077b5 !important;
-    transform: scale(1.5);
-  }
-  
+  background-color: transparent !important;
+}
+
+.centerNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navItemText {
+  color: white !important;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.githubIcon,
+.linkedinIcon {
+  transition: 0.3s;
+}
+
+.navItemText:hover .githubIcon {
+  color: #0077b5 !important;
+  transform: scale(1.5);
+}
+
+.navItemText:hover .linkedinIcon {
+  color: #0077b5 !important;
+  transform: scale(1.5);
+}
+
