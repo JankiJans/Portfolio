@@ -38,7 +38,7 @@ const Projects = () => {
         <Carousel interval={null}>
           <Carousel.Item className={styles.carouselItem}>
             <div className={styles.imageContainer}>
-              <img src={image1} className={styles.carouselImage} />
+              <img src={image1} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image1)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>
@@ -55,7 +55,7 @@ const Projects = () => {
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
           <div className={styles.imageContainer}>
-              <img src={image2} className={styles.carouselImage} />
+              <img src={image2} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image2)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>
@@ -73,7 +73,7 @@ const Projects = () => {
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
           <div className={styles.imageContainer}>
-              <img src={image3} className={styles.carouselImage} />
+              <img src={image3} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image3)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>
@@ -91,7 +91,7 @@ const Projects = () => {
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
           <div className={styles.imageContainer}>
-              <img src={image4} className={styles.carouselImage} />
+              <img src={image4} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image4)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>
@@ -108,7 +108,7 @@ const Projects = () => {
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
           <div className={styles.imageContainer}>
-              <img src={image5} className={styles.carouselImage} />
+              <img src={image5} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image5)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>
@@ -125,7 +125,7 @@ const Projects = () => {
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
           <div className={styles.imageContainer}>
-              <img src={image6} className={styles.carouselImage} />
+              <img src={image6} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image6)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>
@@ -141,7 +141,7 @@ const Projects = () => {
           </Carousel.Item>
           <Carousel.Item className={styles.carouselItem}>
           <div className={styles.imageContainer}>
-              <img src={image7} className={styles.carouselImage} />
+              <img src={image7} className={styles.carouselImage} alt='project'/>
               <div className={styles.clickableArea} onClick={() => handleShow(image7)}></div>
               <div className={styles.carouselCaption}>
                 <div className={styles.intro}>

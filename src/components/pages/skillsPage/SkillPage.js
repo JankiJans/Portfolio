@@ -34,15 +34,16 @@ const SkillPage = () => {
           <p>Front End</p>
           <div className={styles.backendLogos}>
             <div className={styles.firstSet}>
-            <img src={js}></img>
-            <img src={html}></img>
-            <img src={css}></img>
-            <img src={react}></img>
-            <img src={bootstrap}></img>
-            <img src={git}></img>
-            <img src={npm}></img>
-            <img src={webpack}></img>
-            <img src={sass}></img>
+            <img src={js} alt='js'></img>
+            <img src={html} alt='js'></img>
+            <img src={css} alt='js'></img>
+            <img src={react} alt='js'></img>
+            <img src={bootstrap} alt='js'></img>
+            <img src={git} alt='js'></img>
+            <img src={npm} alt='js'></img>
+            <img src={webpack} alt='js'></img>
+            <img src={sass} alt='js'></img>
+            <img src={redux} alt='js'></img>
             </div>
             </div>
         </div>
@@ -50,15 +51,16 @@ const SkillPage = () => {
           <p>Back End</p>
           <div className={styles.backendLogos}>
             <div className={styles.firstSet}>
-              <img src={mongo}></img>
-              <img src={typeScript}></img>
-              <img src={nestJs}></img>
-              <img src={Prisma}></img>
-              <img src={MySql}></img>
-              <img src={ex}></img>       
-              <img src={Ajax}></img>
-              <img src={node}></img>
-              <img src={mongos}></img>
+              <img src={mongo} alt='js'></img>
+              <img src={typeScript} alt='js'></img>
+              <img src={nestJs} alt='js'></img>
+              <img src={Prisma} alt='js'></img>
+              <img src={MySql} alt='js'></img>
+              <img src={ex} alt='js'></img>       
+              <img src={Ajax} alt='js'></img>
+              <img src={node} alt='js'></img>
+              <img src={mongos} alt='js'></img>
+              <img src={Jira} alt='js'></img>
             </div>
           </div>
         </div>
