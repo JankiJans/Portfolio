@@ -122,5 +122,17 @@
   .boxTitle {
     margin-top: 500px;
   }
+
+  .fullWidthBox{
+    margin-top: 600px;
+  }
   
   }
+
+  @media (max-width: 390px) {
+ 
+    .fullWidthBox{
+      margin-top: 350px;
+    }
+    
+    }
