@@ -212,3 +212,19 @@
   }
 
 }
+
+
+@media (max-width: 1400px) and (max-height: 700px) {
+  .carouselImage {
+    height: 550px;
+}
+
+.carouselCointainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projectsContainer {
+  padding-top: 50px;
+}
+}

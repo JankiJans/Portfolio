@@ -35,6 +35,7 @@ const Projects = () => {
   return (
     <div id="projects" className={styles.projectsContainer}>
       <Container>
+        <div className={styles.carouselCointainer}>
         <Carousel interval={null}>
           <Carousel.Item className={styles.carouselItem}>
             <div className={styles.imageContainer}>
@@ -172,6 +173,7 @@ const Projects = () => {
             />
           </Modal.Body>
         </Modal>
+        </div>
       </Container>
     </div>
   );
